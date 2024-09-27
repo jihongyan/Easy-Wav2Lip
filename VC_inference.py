@@ -1,6 +1,5 @@
 import os, shutil
 import gradio as gr
-import webbrowser
 import configparser
 import subprocess
 
@@ -44,6 +43,5 @@ if __name__ == "__main__":
                           inputs=[source_video, source_audio],
                           outputs=[video_output])
 
-    webbrowser.open("http://127.0.0.1:7860")
     app.queue()
     app.launch()        
