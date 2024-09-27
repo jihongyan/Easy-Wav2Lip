@@ -44,4 +44,4 @@ if __name__ == "__main__":
                           outputs=[video_output])
 
     app.queue()
-    app.launch()        
+    app.launch(share=False)        
