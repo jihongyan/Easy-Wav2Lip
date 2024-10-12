@@ -7,11 +7,11 @@ def wav2lip_fn(source_video, source_audio):
     videofilename = os.path.basename(source_video)
     video_path = os.path.join('uploads', videofilename)
     print(source_video)
-    shutil.copy(source_video, video_path)
+    shutil.copyfile(source_video, video_path)
     
     audiofilename = os.path.basename(source_audio)
     audio_path = os.path.join('uploads', audiofilename)
-    shutil.copy(source_audio, audio_path)
+    shutil.copyfile(source_audio, audio_path)
     
     config = configparser.ConfigParser()
     config.read('config.ini')
