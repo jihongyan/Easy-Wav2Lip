@@ -6,6 +6,7 @@ import subprocess
 def wav2lip_fn(source_video, source_audio):    
     videofilename = os.path.basename(source_video)
     video_path = os.path.join('uploads', videofilename)
+    print(source_video)
     shutil.copy(source_video, video_path)
     
     audiofilename = os.path.basename(source_audio)
